@@ -52,3 +52,6 @@ plt.legend(["ic = -1","ic = 0.5","ic = 1"])
 plt.title("DMP system with sine input function")
 
 plt.show()
+
+
+
