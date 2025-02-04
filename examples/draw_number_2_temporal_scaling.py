@@ -21,9 +21,9 @@ import matplotlib.pyplot as plt
 import pydmps
 import pydmps.dmp_discrete
 
-y_des = np.load("2.npz")["arr_0"].T
+y_des = np.load("examples/2.npz")["arr_0"].T
 y_des -= y_des[:, 0][:, None]
-
+print(y_des.shape)
 # test normal run
 dmp = pydmps.dmp_discrete.DMPs_discrete(n_dmps=2, n_bfs=500, ay=np.ones(2) * 10.0)
 y_track = []
