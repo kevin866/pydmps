@@ -83,7 +83,7 @@ for goal in goals:
     plt.figure(1, figsize=(6, 6))
     (plot_goal,) = plt.plot(dmp.goal[0], dmp.goal[1], "gx", mew=3)
     for obstacle in obstacles:
-        (plot_obs,) = plt.plot(obstacle[0], obstacle[1], "rx", mew=3)
+        (plot_obs,) = plt.plot(obstacle[0], obstacle[1], "rx", mew=3, )
     (plot_path,) = plt.plot(y_track[:, 0], y_track[:, 1], "b", lw=2)
     plt.title("DMP system - obstacle avoidance")
 
